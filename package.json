@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint ./src",
-    "ci:test": "vitest --no-watch && start-server-and-test dev http-get://127.0.0.1:5173 e2e"
+    "ci:test": "vitest --no-watch && start-server-and-test dev http://localhost:5173 e2e"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
