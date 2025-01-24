@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint ./src",
-    "ci:test": "vitest --no-watch && start-server-and-test dev http://localhost:5173 npx cypress open"
+    "ci:test": "vitest --no-watch && start-server-and-test dev http://localhost:5173 e2e"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
@@ -30,8 +30,10 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.3.4",
+    "cypress": "^14.0.0",
     "eslint": "^9.12.0",
     "eslint-config-dicodingacademy": "^0.9.4",
+    "eslint-plugin-cypress": "^4.1.0",
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^5.1.0-rc-1460d67c-20241003",
     "globals": "^15.10.0",
