@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "ci:test": "vitest --no-watch && start-server-and-test dev http-get://0.0.0.0:5173 e2e"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
@@ -35,6 +36,7 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc-1460d67c-20241003",
     "globals": "^15.10.0",
     "jsdom": "^26.0.0",
+    "start-server-and-test": "^2.0.10",
     "vite": "^4.2.0",
     "vitest": "^3.0.4"
   }
